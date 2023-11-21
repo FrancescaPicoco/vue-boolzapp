@@ -1,0 +1,6 @@
+/*DISPLAY*/
+.d-flex{display: flex;}
+.j-cont-cent{justify-content: center;}
+.j-cont-between{justify-content: space-between;}
+.align-it-center{align-items: center;}
+.flex-d-column{flex-direction: column;}
