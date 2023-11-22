@@ -173,7 +173,30 @@ const usersWhats = {
                 },
             ],
             names : [
-                "Michele" , "Fabio" , "Samuele" , "Alessandro.B" , "Alessandro.L" , "Claudia" , "Federico" , "Davide"
+                {
+                    noMe:"Michele"
+                },
+                {
+                    noMe:"Fabio"
+                },
+                {
+                    noMe:"Samuele"
+                },
+                {
+                    noMe:"Alessandro.B"
+                },
+                {
+                    noMe:"Alessandro.L"
+                },
+                {
+                    noMe:"Claudia"
+                },
+                {
+                    noMe:"Federico"
+                },
+                {
+                    noMe:"Davide"
+                }
             ]        
         }
     },
