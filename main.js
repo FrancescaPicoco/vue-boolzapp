@@ -214,6 +214,7 @@ const usersWhats = {
             };              
             this.users[this.current].messages.push(newmessagge); 
             this.newMex ="",
+            //newmessagge.status ="recieved"
             this.timeFunc()
         },
         cpushare(){
@@ -224,9 +225,8 @@ const usersWhats = {
            this.users[this.current].messages.push(newmessaggecpu)       
        },
        timeFunc() {
-        let time 
-        time = setTimeout(this.cpushare , 1000);
-      }      
+       setTimeout(this.cpushare , 1000);
+       }      
        
     },
     mounted() {

@@ -22,9 +22,9 @@
             <div id="container" class="d-flex">
                 <div id="lft-cont">
                     <div id="top-lft-cont" class="d-flex j-cont-between align-it-center">
-                        <div class="imgContainer">
+                        <div class="imgContainer d-flex align-it-center">
                             <img src="img/avatar_io.jpg"></img>
-                            <span></span>
+                            <span class="ml-1">Sofia</span>
                         </div>
                         <div class="icnMix">
                             <i class="fa-solid fa-circle-notch"></i>
@@ -47,7 +47,7 @@
                                 <i class="fa-solid fa-magnifying-glass" style="color: #8b9098;"></i>
                             </div>
                             <div class="startOrSearch">
-                                <span>Cerca o inizia una nuova chat</span>
+                                <input tipe="textarea" placeholder="Cerca o inizia una nuova chat" id="searchUsers"></input>
                             </div>
                         </div>
                         <ul>
@@ -70,13 +70,13 @@
                     <div id="top-rgt-cont" class="d-flex j-cont-between align-it-center">
                         <div class="d-flex">
                             <div id="userImg" class="imgContainer d-flex align-it-center">
-                                <img src="img/avatar_1.jpg">
+                                <img v-bind:src="users[current].avatar">
                             </div>
                             <div>
-                                <div v-for="singolo in names">{{singolo}}</div>
-                                <p>ultimo accesso oggi alle 12:00</p>
+                                <p>{{users[current].nome}}</p>                               
                             </div>
-                        </div>     
+                        </div> 
+                        <p>ultimo accesso oggi alle 12:00</p>    
                         <div class="icnMix">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <i class="fa-solid fa-paperclip"></i>

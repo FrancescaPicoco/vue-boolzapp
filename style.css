@@ -85,6 +85,7 @@ body{
 }
 .startOrSearch{
     font-size: 0.6rem;
+    width: 100%;
 }
 .lensIcn{
     font-size: 10px;
@@ -97,11 +98,11 @@ body{
     background-color: rgb(234, 234, 234);
 }
 .icnMix{
-    color: rgb(177, 177, 177);  
+    color: rgb(177, 177, 177); 
 }
 .icnMix>i{
     padding: 0.4rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 img{
     border-radius: 50%;
@@ -141,4 +142,8 @@ img{
     padding: 0.5rem;
     border-radius: 10px;
     border: none
+}
+#searchUsers{
+    border: none;
+    width: 100%;
 }
