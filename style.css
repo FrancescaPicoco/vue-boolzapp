@@ -41,14 +41,14 @@ body{
     width: 100%;
     height: 90%;
 }
-.green-mex{
+.greenMex{
     background-color: rgb(105, 130, 66);
     margin-left: auto;
     padding: 0.7rem 1rem;
     border-radius: 15px;
     margin-top: 1rem;
 }
-.white-mex{
+.whiteMex{
     background-color: whitesmoke;
     margin-right: auto;
     padding: 0.7rem 1rem;

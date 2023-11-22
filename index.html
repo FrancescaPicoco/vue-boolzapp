@@ -87,7 +87,15 @@
                     <div id="bottom-rgt-cont" class="d-flex j-cont-cent align-it-center">
                         <div class="containerCenter d-flex flex-d-column-rev">
                             <ul>
-                                <li v-for="mex in this.users[0].messages">
+                                <li v-for="mex in this.users[1].messages">
+                                    <!-- <element v-bind:class = "(condition)?'class_if_is_true':'else_class'"></element> -->
+                                    <p v-bind:class = "(recived)? 'greenMex':'whiteMex'>
+                                        {{mex.message}}
+                                      </p>
+                                      
+                                      <p v-else>
+                                       
+                                      </p>
                                     {{mex.message}}
                                 </li>
                             </ul>
