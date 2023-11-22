@@ -202,7 +202,8 @@ const usersWhats = {
     },
     methods: {
         selectedChat(i){
-
+          console.log(i)
+          this.current=i
         }
     },
     mounted() {

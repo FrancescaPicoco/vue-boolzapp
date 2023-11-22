@@ -73,7 +73,7 @@
                                 <img src="img/avatar_1.jpg">
                             </div>
                             <div>
-                                <div v-for="(singolo , i) in names">{{singolo}}</div>
+                                <div v-for="singolo in names">{{singolo}}</div>
                                 <p>ultimo accesso oggi alle 12:00</p>
                             </div>
                         </div>     
@@ -86,8 +86,7 @@
                     <!--se è inviato agg classe verde se è ricevuto quella bianca-->
                     <div id="bottom-rgt-cont" class="d-flex flex-d-column j-cont-cent align-it-center">
                         <div class="containerCenter d-flex flex-d-column" id="id">
-                            <div v-for="mex in this.users[this.current].messages">
-                                
+                            <div v-for="mex in users[current].messages">                            
                                 <p v-bind:class = "(mex.status == 'received' ) ? 'whiteMex':'greenMex'">
                                     {{mex.message}}
                                 </p>
