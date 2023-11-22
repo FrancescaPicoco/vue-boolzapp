@@ -98,10 +98,10 @@
                                 <i class="fa-regular fa-face-smile"></i>
                             </div>
                             <div class="size80">
-                                <input type="textarea" id="textbox" placeholder="Scrivi un messaggio" v-model="newMex">                       
+                                <input type="textarea" id="textbox" placeholder="Scrivi un messaggio" v-model="newMex" @keyup.enter="share()">                       
                             </div>
                             <div class="size10 gray">
-                                <button @click="share()">invia</button>
+                                <!-- <button @click="share()">invia</button> -->    
                                 <i class="fa-solid fa-microphone"></i>
                             </div>
                         </div>
