@@ -44,4 +44,86 @@ body{
 .green-mex{
     background-color: rgb(105, 130, 66);
     margin-left: auto;
+    padding: 0.7rem 1rem;
+    border-radius: 15px;
+    margin-top: 1rem;
+}
+.white-mex{
+    background-color: whitesmoke;
+    margin-right: auto;
+    padding: 0.7rem 1rem;
+    border-radius: 15px;
+    margin-top: 1rem;
+
+}
+.undergray{
+     color: gray;
+     text-decoration: underline;
+}
+.border{
+    border: 1px solid white;
+    padding: 0.8rem;
+}
+#bell{
+    background-color: rgb(142, 218, 252);
+    padding: 0.7rem;
+    font-size: 0.7em;
+}
+#bellIcn{
+    font-size: 20px;
+    color: rgb(142, 218, 252);
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.3rem;
+}
+#bottom-lft-cont{
+    background-color: rgb(250, 250, 250);
+}
+#searchBar{
+    background-color: white;
+    margin: 0.5rem;   
+}
+.startOrSearch{
+    font-size: 0.6rem;
+}
+.lensIcn{
+    font-size: 10px;
+}
+.lensIcn , .startOrSearch{
+    border: 1px solid rgba(205, 209, 211, 0.806);
+    padding: 0.3rem 1.3rem;  
+}
+#top-lft-cont , #top-rgt-cont{
+    background-color: rgb(234, 234, 234);
+}
+.icnMix{
+    color: rgb(177, 177, 177);  
+}
+.icnMix>i{
+    padding: 0.4rem;
+    font-size: 1.4rem;
+}
+img{
+    border-radius: 50%;
+    width: 100%;
+}
+.imgContainer{
+    width: 50px;
+    height: 50px;
+    margin-left: 0.4rem;
+}
+.imgContainerSmall{
+    width: 25px;
+    height: 25px;
+}
+#bottom-rgt-cont{
+    background-image: url('img/mine.jpg');
+}
+#botttext{
+    font-size: 0.6rem;
+}
+.containerCenter{
+    width: 600px;
+    height: 500px;
+    padding: 2rem;
 }

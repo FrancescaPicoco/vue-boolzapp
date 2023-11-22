@@ -2,5 +2,8 @@
 .d-flex{display: flex;}
 .j-cont-cent{justify-content: center;}
 .j-cont-between{justify-content: space-between;}
+.j-cont-around{justify-content: space-around;}
 .align-it-center{align-items: center;}
-.flex-d-column{flex-direction: column;}
+.flex-d-column-rev{flex-direction: column-reverse;}
+
+.mr-1{margin-right: 1rem;}

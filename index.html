@@ -10,6 +10,8 @@
     <!--STYLE-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utilities.css">
+    <!--ICN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!--VUE-->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <title>Document</title>
@@ -19,17 +21,70 @@
         <div id="baseContainer" class="d-flex j-cont-cent align-it-center">
             <div id="container" class="d-flex">
                 <div id="lft-cont">
-                    <div id="top-lft-cont"></div>
-                    <div id="bottom-lft-cont"></div>
+                    <div id="top-lft-cont" class="d-flex j-cont-between align-it-center">
+                        <div class="imgContainer">
+                            <img src="img/avatar_io.jpg"></img>
+                            <span></span>
+                        </div>
+                        <div class="icnMix">
+                            <i class="fa-solid fa-circle-notch"></i>
+                            <i class="fa-solid fa-message"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div id="bottom-lft-cont">
+                        <div id="bell" class="d-flex">
+                            <div id="bellIcn" class="mr-1">
+                                <i class="fa-solid fa-bell-slash"></i>
+                            </div>
+                            <div id="">
+                                <p>Ricevi notifiche di nuovi messaggi</p>
+                                <p class="undergray">Attiva notifiche desktop</p>
+                            </div>
+                        </div>
+                        <div id="searchBar" class="d-flex">
+                            <div class="lensIcn">
+                                <i class="fa-solid fa-magnifying-glass" style="color: #8b9098;"></i>
+                            </div>
+                            <div class="startOrSearch">
+                                <span>Cerca o inizia una nuova chat</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li v-for ="singoloUser in users" class="d-flex border align-it-center">
+                                 <div class="imgContainerSmall d-flex align-it-center">    
+                                     <img v-bind:src="singoloUser.avatar" alt="">
+                                 </div> 
+                                 <div>
+                                     <div id="uptext">{{singoloUser.nome}}</div>
+                                     <div id="botttext">ultimo accesso</div>
+                                 </div>
+                                 <div>{{singoloUser.data}}</div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="rgt-cont">
-                    <div id="top-rgt-cont"></div>
-                    <div id="bottom-rgt-cont" class="d-flex flex-d-column">
-                        <div class="white-mex">ehi</div>
-                        <div class="green-mex">ciao</div>
-                        <div class="white-mex">come va </div>
-                        <div class="white-mex">da tanto non ti vedo</div>
-                        <div class="green-mex">una merda</div>
+                    <div id="top-rgt-cont" class="d-flex j-cont-between align-it-center">
+                        <div id="userImg" class="imgContainer d-flex align-it-center">
+                            <img src="img/avatar_1.jpg">
+                        </div>
+                        <div></div>
+                        <div class="icnMix">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-paperclip"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <!--se è inviato agg classe verde se è ricevuto quella bianca-->
+                    <div id="bottom-rgt-cont" class="d-flex j-cont-cent align-it-center">
+                        <div class="containerCenter d-flex flex-d-column-rev">
+                            <ul>
+                                <li v-for="mex in this.users[0].messages">
+                                    {{mex.message}}
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
