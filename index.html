@@ -51,25 +51,32 @@
                             </div>
                         </div>
                         <ul>
-                            <li v-for ="singoloUser in users" class="d-flex border align-it-center">
-                                 <div class="imgContainerSmall d-flex align-it-center">    
-                                     <img v-bind:src="singoloUser.avatar" alt="">
-                                 </div> 
-                                 <div>
-                                     <div id="uptext">{{singoloUser.nome}}</div>
-                                     <div id="botttext">ultimo accesso</div>
-                                 </div>
-                                 <div>{{singoloUser.data}}</div>
+                            <li v-for ="singoloUser in users" class="d-flex border align-it-center j-cont-between">
+                                <div class="user-left d-flex">
+                                    <div class="imgContainerSmall d-flex align-it-center">    
+                                        <img v-bind:src="singoloUser.avatar" alt="">
+                                    </div> 
+                                    <div>
+                                        <div id="uptext">{{singoloUser.nome}}</div>
+                                        <div id="botttext">ultimo accesso</div>
+                                    </div>
+                                </div>
+                                 
+                                <div><span id="time">12:00</span></div>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div id="rgt-cont">
                     <div id="top-rgt-cont" class="d-flex j-cont-between align-it-center">
-                        <div id="userImg" class="imgContainer d-flex align-it-center">
-                            <img src="img/avatar_1.jpg">
-                        </div>
-                        <div></div>
+                        <div class="d-flex">
+                            <div id="userImg" class="imgContainer d-flex align-it-center">
+                                <img src="img/avatar_1.jpg">
+                            </div>
+                            <div>
+                                <div v-for="(singolo , i) in names">{{singolo}}</div>
+                            </div>
+                        </div>     
                         <div class="icnMix">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <i class="fa-solid fa-paperclip"></i>

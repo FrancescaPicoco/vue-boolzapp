@@ -5,5 +5,6 @@
 .j-cont-around{justify-content: space-around;}
 .align-it-center{align-items: center;}
 .flex-d-column-rev{flex-direction: column-reverse;}
+.f-wrap{flex-wrap: wrap;}
 
 .mr-1{margin-right: 1rem;}

@@ -171,7 +171,10 @@ const usersWhats = {
                         }
                     ],
                 },
-            ],        
+            ],
+            names : [
+                "Michele" , "Fabio" , "Samuele" , "Alessandro.B" , "Alessandro.L" , "Claudia" , "Federico" , "Davide"
+            ]        
         }
     },
     mounted() {
