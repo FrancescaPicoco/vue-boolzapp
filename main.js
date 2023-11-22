@@ -208,11 +208,13 @@ const usersWhats = {
           this.current=i
         },
         share(){
-             let newmessagge = {
+            let newmessagge = {
                  message: this.newMex,
                  status: "sent"
-             };              
-            this.users[this.current].messages.push(newmessagge)       
+            };              
+            this.users[this.current].messages.push(newmessagge); 
+            this.newMex ="",
+            this.timeFunc()
         },
         cpushare(){
             let newmessaggecpu = {
@@ -220,7 +222,12 @@ const usersWhats = {
                 status: "recieved"
             };              
            this.users[this.current].messages.push(newmessaggecpu)       
-       }
+       },
+       timeFunc() {
+        let time 
+        time = setTimeout(this.cpushare , 1000);
+      }      
+       
     },
     mounted() {
         this.users[this.current].messages.forEach(mex => {
