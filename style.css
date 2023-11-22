@@ -7,6 +7,7 @@ body{
     font-family: 'Roboto' , sans-serif;
     background-color:rgb(37, 40, 42);   
 }
+/*CONTAINERS*/
 #baseContainer{
     height: 100vh;
     background: linear-gradient(
@@ -34,13 +35,31 @@ body{
 #top-lft-cont , #top-rgt-cont{
     width: 100%;
     height: 10%;
-    background-color: black;
+    background-color: rgb(234, 234, 234);
     border: 1px solid white;
 }
 #bottom-lft-cont , #bottom-rgt-cont{
     width: 100%;
     height: 90%;
 }
+#bottom-lft-cont{
+    background-color: rgb(250, 250, 250);
+}
+#bottom-rgt-cont{
+    background-image: url('img/mine.jpg');
+}
+.containerCenter{
+    width: 600px;
+    height: 500px;
+    padding: 2rem;
+}
+#footerCont{
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(243, 238, 234);
+    margin-top: auto;
+}
+/**STYLE***/
 .greenMex{
     background-color: rgb(105, 130, 66);
     margin-left: auto;
@@ -54,7 +73,6 @@ body{
     padding: 0.7rem 1rem;
     border-radius: 15px;
     margin-top: 1rem;
-
 }
 .undergray{
      color: gray;
@@ -64,6 +82,7 @@ body{
     border: 1px solid white;
     padding: 0.8rem;
 }
+/*ICN*/
 #bell{
     background-color: rgb(142, 218, 252);
     padding: 0.7rem;
@@ -76,8 +95,20 @@ body{
     border-radius: 50%;
     padding: 0.3rem;
 }
-#bottom-lft-cont{
-    background-color: rgb(250, 250, 250);
+.icnMix{
+    color: rgb(177, 177, 177); 
+}
+.icnMix>i{
+    padding: 0.4rem;
+    font-size: 1.2rem;
+}
+/*INPUT*/
+.lensIcn{
+    font-size: 10px;
+}
+.lensIcn , .startOrSearch{
+    border: 1px solid rgba(205, 209, 211, 0.806);
+    padding: 0.3rem 1.3rem;  
 }
 #searchBar{
     background-color: white;
@@ -87,23 +118,17 @@ body{
     font-size: 0.6rem;
     width: 100%;
 }
-.lensIcn{
-    font-size: 10px;
+#searchUsers{
+    border: none;
+    width: 100%;
 }
-.lensIcn , .startOrSearch{
-    border: 1px solid rgba(205, 209, 211, 0.806);
-    padding: 0.3rem 1.3rem;  
+#textbox{
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none
 }
-#top-lft-cont , #top-rgt-cont{
-    background-color: rgb(234, 234, 234);
-}
-.icnMix{
-    color: rgb(177, 177, 177); 
-}
-.icnMix>i{
-    padding: 0.4rem;
-    font-size: 1.2rem;
-}
+/*****IMG******/
 img{
     border-radius: 50%;
     width: 100%;
@@ -117,33 +142,11 @@ img{
     width: 25px;
     height: 25px;
 }
-#bottom-rgt-cont{
-    background-image: url('img/mine.jpg');
-}
 #botttext{
     font-size: 0.6rem;
-}
-.containerCenter{
-    width: 600px;
-    height: 500px;
-    padding: 2rem;
 }
 #time{
     font-size: 10px;
 }
-#footerCont{
-    width: 100%;
-    height: 7vh;
-    background-color: rgb(243, 238, 234);
-    margin-top: auto;
-}
-#textbox{
-    width: 90%;
-    padding: 0.5rem;
-    border-radius: 10px;
-    border: none
-}
-#searchUsers{
-    border: none;
-    width: 100%;
-}
+
+

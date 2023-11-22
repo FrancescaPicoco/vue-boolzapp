@@ -1,20 +1,21 @@
 /*DISPLAY*/
 .d-flex{display: flex;}
+.d-inline{display: inline;}
+.d-block{display: block;}
+/*DISPLAY*/
 .j-cont-cent{justify-content: center;}
 .j-cont-between{justify-content: space-between;}
 .j-cont-around{justify-content: space-around;}
 .align-it-center{align-items: center;}
 .flex-d-column{flex-direction: column;}
 .f-wrap{flex-wrap: wrap;}
-
+/*MARGIN*/
 .mr-1{margin-right: 1rem;}
 .ml-1{margin-left: 1rem;}
 .mt-1{margin-top: 1rem;}
-
-.size10{
-    width: 10%;
-}
+/*SIZE&FONT*/
+.size10{width: 10%;}
 .size80{width: 80%;}
-
+/*COLORS*/
 .gray{color: rgb(107, 115, 118);}
-.d-inline{display: inline;}
+
