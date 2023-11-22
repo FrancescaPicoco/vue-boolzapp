@@ -60,8 +60,7 @@
                                         <div id="uptext">{{singoloUser.nome}}</div>
                                         <div id="botttext">ultimo accesso</div>
                                     </div>
-                                </div>
-                                 
+                                </div>                        
                                 <div><span id="time">12:00</span></div>
                             </li>
                         </ul>
@@ -73,9 +72,9 @@
                             <div id="userImg" class="imgContainer d-flex align-it-center">
                                 <img src="img/avatar_1.jpg">
                             </div>
-                            <div>
+                            <!-- <div>
                                 <div v-for="(singolo , i) in names">{{singolo}}</div>
-                            </div>
+                            </div> -->
                         </div>     
                         <div class="icnMix">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -86,10 +85,10 @@
                     <!--se è inviato agg classe verde se è ricevuto quella bianca-->
                     <div id="bottom-rgt-cont" class="d-flex j-cont-cent align-it-center">
                         <div class="containerCenter d-flex flex-d-column-rev">
-                            <ul>
-                                <li v-for="mex in this.users[1].messages">
+                            <!-- <ul>
+                                <li v-for="mex in this.users[1].messages">-->
                                     <!-- <element v-bind:class = "(condition)?'class_if_is_true':'else_class'"></element> -->
-                                    <p v-bind:class = "(recived)? 'greenMex':'whiteMex'>
+                                    <!-- <p v-bind:class = "(recived)? 'greenMex':'whiteMex'>
                                         {{mex.message}}
                                       </p>
                                       
@@ -98,7 +97,7 @@
                                       </p>
                                     {{mex.message}}
                                 </li>
-                            </ul>
+                            </ul> --> 
                         </div>
                     </div>
                 </div>
