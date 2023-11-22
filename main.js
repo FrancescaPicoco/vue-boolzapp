@@ -202,12 +202,7 @@ const usersWhats = {
     },
     methods: {
         selectedChat(i){
-            document.getElementById("id").innerHTML += `<div v-for="mex in ${this.users[this.current].messages}">
-            
-            <p v-bind:class = "(mex.status == 'received' ) ? 'whiteMex':'greenMex'">
-                {{mex.message}}
-            </p>
-        </div>`
+
         }
     },
     mounted() {
