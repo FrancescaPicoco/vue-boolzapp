@@ -211,11 +211,16 @@ const usersWhats = {
              let newmessagge = {
                  message: this.newMex,
                  status: "sent"
-             };  
-            
-            this.users[this.current].messages.push(newmessagge)
-        
-        }
+             };              
+            this.users[this.current].messages.push(newmessagge)       
+        },
+        cpushare(){
+            let newmessaggecpu = {
+                message: "ok",
+                status: "recieved"
+            };              
+           this.users[this.current].messages.push(newmessaggecpu)       
+       }
     },
     mounted() {
         this.users[this.current].messages.forEach(mex => {
