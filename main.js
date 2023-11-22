@@ -6,9 +6,9 @@ Visualizzazione dinamica della lista contatti: tramite la direttiva v-for,
 */
 const { createApp } = Vue
 const usersWhats = {
-    data: function(){
-        current = 0;
+    data: function(){       
         return{
+            current : 0,
             users : [               
                 {   
                     nome: "Michele",
@@ -201,7 +201,7 @@ const usersWhats = {
         }
     },
     mounted() {
-        this.users[0].messages.forEach(mex => {
+        this.users[this.current].messages.forEach(mex => {
             console.log(mex.message);
         })
     } 
