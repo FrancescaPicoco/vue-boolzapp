@@ -8,13 +8,14 @@ const { createApp } = Vue
 const usersWhats = {
     data: function(){       
         return{
+            newMex : "",
             current : 0,
             users : [               
                 {   
                     nome: "Michele",
                     avatar: "img/avatar_1.jpg",
                     visible: true,
-                    messages: [
+                    messages: [                     
                         {
                             date: "10/01/2020 15:30:55",
                             message: "Hai portato a spasso il cane?",
@@ -29,7 +30,8 @@ const usersWhats = {
                             date: "10/01/2020 16:15:22",
                             message: "Tutto fatto!",
                             status: "received"
-                        }
+                        },
+                        
                     ],
                 },
                 {
@@ -204,6 +206,15 @@ const usersWhats = {
         selectedChat(i){
           console.log(i)
           this.current=i
+        },
+        share(){
+             let newmessagge = {
+                 message: this.newMex,
+                 status: "sent"
+             };  
+            
+            this.users[this.current].messages.push(newmessagge)
+        
         }
     },
     mounted() {
