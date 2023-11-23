@@ -195,7 +195,7 @@ const usersWhats = {
             //         noMe:"Davide"
             //     }
             // ],
-            names : ["marco" , "fabio" , "samuele" , "alessandro" , "alessandro" , "claudia" , "federico"]        
+            // names : ["marco" , "fabio" , "samuele" , "alessandro" , "alessandro" , "claudia" , "federico"]        
         }
     },
     methods: {
@@ -226,7 +226,7 @@ const usersWhats = {
        //prova per ricerca
        lettere(){
         console.log(this.inputValue);
-            if(this.names.includes(this.inputValue)){
+            if(this.users.includes(this.inputValue)){
                visible = true
             }else{
                visible = false
