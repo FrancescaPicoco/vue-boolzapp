@@ -2,6 +2,7 @@
 .d-flex{display: flex;}
 .d-inline{display: inline;}
 .d-block{display: block;}
+.d-none{display:none}
 /*DISPLAY*/
 .j-cont-cent{justify-content: center;}
 .j-cont-between{justify-content: space-between;}

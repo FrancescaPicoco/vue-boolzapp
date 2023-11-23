@@ -2,7 +2,7 @@ const { createApp } = Vue
 const usersWhats = {
     data: function(){       
         return{
-            inputValue : "",
+            inputValue : [],
             newMex : "",
             current : 0,
             users : [               
@@ -223,25 +223,25 @@ const usersWhats = {
        timeFunc() {
        setTimeout(this.cpushare , 1000);
        },
-       //prova per ricerca
        lettere(){
-        for (let i = 0; i < this.user.nome.length; i++) {
-            const element = this.user.lenght[i];
-            console.log(element) 
-            // if(this.users.includes(this.inputValue)){
-            //     visible = true
-            //  }else{
-            //     visible = false
-            //  }
-            //  console.log(visible)
-        }                   
-       }
-             
-    },
-    mounted() {
-        this.users[this.current].messages.forEach(mex => {
-            console.log(mex.message);
-        })
-    } 
+        for (let i = 0; i < this.users.length; i++) {
+            this.users[i].visible = true
+            if (!this.users[i].nome.includes(this.inputValue)){
+                this.users[i].visible = false
+
+            }
+            console.log(this.users[i].visible)
+        }        
+       },
+       mexDelete(current){
+            this.users.messages.message[current].splice(current,1)
+       },
+       
+     mounted() {
+         this.users[this.current].messages.forEach(mex => {
+             console.log(mex.message);
+         })
+     } 
+    }    
 }
 createApp(usersWhats).mount("#app")

@@ -51,7 +51,9 @@
                             </div>
                         </div>
                         <ul>
-                            <li v-for ="(singoloUser , i) in users" class="d-flex border align-it-center j-cont-between" @click="selectedChat(i)">
+                            <!--v-if users.visible=true addclass d-block. else d-none-->
+                            <!-- v-bind:class="(users.visible = false)? 'd-none' : 'd-block'"  -->
+                            <li v-for="(singoloUser , i) in users" class="d-flex border align-it-center j-cont-between" @click="selectedChat(i)" id="userid">
                                 <div class="user-left d-flex">
                                     <div class="imgContainerSmall d-flex align-it-center">    
                                         <img v-bind:src="singoloUser.avatar" alt="">
@@ -87,7 +89,7 @@
                     <div id="bottom-rgt-cont" class="d-flex flex-d-column j-cont-cent align-it-center">
                         <div class="containerCenter d-flex flex-d-column" id="id">
                             <div v-for="mex in users[current].messages" class="d-flex flex-d-column">                            
-                                <p v-bind:class = "(mex.status == 'received' ) ? 'whiteMex':'greenMex'">
+                                <p v-bind:class = "(mex.status == 'received' ) ? 'whiteMex':'greenMex'" @click = "mexDelete(current)">
                                     {{mex.message}}
                                 </p>
                             </div>
