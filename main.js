@@ -225,14 +225,18 @@ const usersWhats = {
        },
        //prova per ricerca
        lettere(){
-        console.log(this.inputValue);
-            if(this.users.includes(this.inputValue)){
-               visible = true
-            }else{
-               visible = false
-            }
-            console.log(visible)
-        }            
+        for (let i = 0; i < this.user.nome.length; i++) {
+            const element = this.user.lenght[i];
+            console.log(element) 
+            // if(this.users.includes(this.inputValue)){
+            //     visible = true
+            //  }else{
+            //     visible = false
+            //  }
+            //  console.log(visible)
+        }                   
+       }
+             
     },
     mounted() {
         this.users[this.current].messages.forEach(mex => {
