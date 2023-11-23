@@ -220,12 +220,22 @@ const usersWhats = {
         cpushare(){
             let newmessaggecpu = {
                 message: "ok",
-                status: "recieved"
+                status: "received"
             };              
            this.users[this.current].messages.push(newmessaggecpu)       
        },
        timeFunc() {
        setTimeout(this.cpushare , 1000);
+       },
+       //prova per ricerca
+       lettere(){
+        letterecercate=document.getElementById(searchUsers).value
+        console.log(letterecercate)
+        if(names.includes(letterecercate)){
+               visible = true
+        }else {
+            visible=false
+        }
        }      
        
     },
