@@ -1,14 +1,8 @@
-/*Milestone 1
-Replica della grafica con la possibilità di avere messaggi scritti dall’utente (verdi)
- e dall’interlocutore (bianco) assegnando due classi CSS diverse
-Visualizzazione dinamica della lista contatti: tramite la direttiva v-for,
- visualizzare nome e immagine di ogni contatto
-*/
 const { createApp } = Vue
 const usersWhats = {
     data: function(){       
         return{
-            valoreinput : "inputValue",
+            inputValue : "",
             newMex : "",
             current : 0,
             users : [               
@@ -231,8 +225,8 @@ const usersWhats = {
        },
        //prova per ricerca
        lettere(){
-        console.log(this.valoreinput);
-            if(this.names.includes(this.valoreinput)){
+        console.log(this.inputValue);
+            if(this.names.includes(this.inputValue)){
                visible = true
             }else{
                visible = false
