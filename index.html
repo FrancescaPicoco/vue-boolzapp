@@ -43,11 +43,11 @@
                             </div>
                         </div>
                         <div id="searchBar" class="d-flex">
-                            <div class="lensIcn">
+                            <div class="lensIcn" @onclick="lettere()">
                                 <i class="fa-solid fa-magnifying-glass" style="color: #8b9098;"></i>
                             </div>
                             <div class="startOrSearch">
-                                <input tipe="textarea" placeholder="Cerca o inizia una nuova chat" id="searchUsers" value="" @keyup.enter="lettere()"></input>
+                                <input tipe="textarea" placeholder="Cerca o inizia una nuova chat" id="searchUsers" @keyup.enter="lettere()" v-model="inputValue"></input>
                             </div>
                         </div>
                         <ul>

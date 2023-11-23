@@ -8,6 +8,7 @@ const { createApp } = Vue
 const usersWhats = {
     data: function(){       
         return{
+            valoreinput : "inputValue",
             newMex : "",
             current : 0,
             users : [               
@@ -174,32 +175,33 @@ const usersWhats = {
                     ],
                 },
             ],
-            names : [
-                {
-                    noMe:"Michele"
-                },
-                {
-                    noMe:"Fabio"
-                },
-                {
-                    noMe:"Samuele"
-                },
-                {
-                    noMe:"Alessandro.B"
-                },
-                {
-                    noMe:"Alessandro.L"
-                },
-                {
-                    noMe:"Claudia"
-                },
-                {
-                    noMe:"Federico"
-                },
-                {
-                    noMe:"Davide"
-                }
-            ],        
+            // names : [
+            //     {
+            //         noMe:"Michele"
+            //     },
+            //     {
+            //         noMe:"Fabio"
+            //     },
+            //     {
+            //         noMe:"Samuele"
+            //     },
+            //     {
+            //         noMe:"Alessandro.B"
+            //     },
+            //     {
+            //         noMe:"Alessandro.L"
+            //     },
+            //     {
+            //         noMe:"Claudia"
+            //     },
+            //     {
+            //         noMe:"Federico"
+            //     },
+            //     {
+            //         noMe:"Davide"
+            //     }
+            // ],
+            names : ["marco" , "fabio" , "samuele" , "alessandro" , "alessandro" , "claudia" , "federico"]        
         }
     },
     methods: {
@@ -229,15 +231,14 @@ const usersWhats = {
        },
        //prova per ricerca
        lettere(){
-        letterecercate=document.getElementById(searchUsers).value
-        console.log(letterecercate)
-        if(names.includes(letterecercate)){
+        console.log(this.valoreinput);
+            if(this.names.includes(this.valoreinput)){
                visible = true
-        }else {
-            visible=false
-        }
-       }      
-       
+            }else{
+               visible = false
+            }
+            console.log(visible)
+        }            
     },
     mounted() {
         this.users[this.current].messages.forEach(mex => {
